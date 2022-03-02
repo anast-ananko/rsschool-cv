@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="wrapper">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#about" class="header__link">About me</a>                   
+                    </li>
+                    <li class="header__item">
+                        <a href="#skills" class="header__link">Skills</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#code" class="header__link">Code example</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#projects" class="header__link">Projects</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#work" class="header__link">Work experience</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#education" class="header__link">Education</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#contacts" class="header__link">Contacts</a>                   
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+
+            <section class="contacts">
+                <div class="contacts__photo">
+                    <img src="pictures/DSC05182.JPG" alt="photo" class="contacts__photo-pic">
+                </div>
+                <div id="contacts" class="contacts__contact">
+                   <h2 class="subtitle contacts__contact-title">Contacts</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <span class="contacts__span">Phone:</span>
+                            <a href="tel:+375296084412" class="contacts__tel">+375296084412</a>
+                        </li>
+                        <li class="contacts__item">
+                            <span class="contacts__span">Email:</span>
+                            <a href="mailto:anast.ananko@gmail.com" class="contacts__mail">anast.ananko@gmail.com</a>
+                        </li>
+                        <li class="contacts__item">
+                            <span class="contacts__span">Skype:</span>
+                            <a href="skype:anastasiya18740" class="contacts__skype">anastasiya18740</a>
+                        </li>
+                    </ul>     
+                </div>
+            </section>
+    
+            <section class="info">
+                    <h1 class="title">Nastassia Ananka</h1>
+
+                    <div id="about" class="info__about">
+                        <h2 class="subtitle">About me</h2>
+                        <p>I’m a junior frontend developer. 
+                        I want to upgrade my skills and to learn something new
+                        </p>
+                    </div>
+
+                    <div id="skills" class="info__skills">
+                        <h2 class="subtitle">Skills</h2>
+                        <ul class="info__skills-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="code" class="info__code">
+                        <h2 class="subtitle">Code example</h2>
+                        <pre>
+                            <code class="info__code-item">
+function lastSurvivor (letters, coords) {
+    let str = letters.split('');
+    for (let i = 0; i &lt; coords.length; i++) {
+        str.splice(coords[i], 1);
+    }
+    return String(str);
+}
+                            </code> 
+                        </pre> 
+                    </div>
+
+                    <div id="projects" class="info__projects">
+                        <h2 class="subtitle">Projects</h2>
+                        <a href="https://anast-ananko.github.io/slider/" class="info__projects-link">Vertical slider</a>
+                    </div>
+                   
+                    <div id="work" class="info__work">
+                        <h2 class="subtitle">Work experience</h2>
+                        <p>I have been working as a space equipment tester since 2013</p>
+                    </div>
+
+                    <div id="education" class="info__education">
+                        <h2 class="subtitle">Education</h2>
+                        <ul class="info__education-list">
+                            <li class="info__education-item"> 2009-2013 
+                                <br>
+                                Higher State College of Communications
+                            <li class="info__education-item"> 2013-2018
+                                <br>
+                                Belarusian State University of Informatics and Radioelectronics
+                            </li>    
+                        </ul>
+                    </div>
+                   
+                    <div id="english" class="info__english">
+                        <h2 class="subtitle">English</h2>
+                        <p>Intermediate(B1), but I have no speaking practice for long time</p>
+                    </div>
+               
+            </section>
+        </main>
+    </div>
+       
+   <footer class="footer">
+       <div class="wrapper">
+           <div class="footer__item">
+            <a href="https://rs.school/js/"><img src="pictures/rs_school_js.svg" alt="logo-rss" class="footer__rss"></a>
+            <p class="footer__year">2022</p>
+            <a href="https://github.com/anast-ananko"><img src="pictures/logogit.png" alt="logo-github" class="footer__github"></a>
+           </div>
+        </div>
+    </footer>
+
+</body>
+</html>
