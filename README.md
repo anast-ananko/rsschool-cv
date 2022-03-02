@@ -1,1 +1,1 @@
-https://anast-ananko.github.io/rsschool-cv/cv
+https://anast-ananko.github.io/rsschool-cv/
