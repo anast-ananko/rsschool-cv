@@ -41,7 +41,7 @@ function lastSurvivor(letters, coords) {
 
 ### Work experience
 
-I work as a space equipment tester.
+I have worked as a space equipment tester since 2013.
 
 ---
 
