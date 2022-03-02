@@ -12,8 +12,7 @@
 
 ### About me
 
-I work for a Belarusian company as a space equipment tester. I decided to go to developer courses because I want to learn something new. I work well in a team.
-
+I work for a Belarusian company as a space equipment tester. I decided to go to developer courses because I want to learn something new.
 ---
 
 ### Skills
