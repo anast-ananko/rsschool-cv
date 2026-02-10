@@ -1,3 +1,184 @@
-.red {
-  color: red;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background: #073e42;
+  color: #0f2f30;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: #062f33;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav ul {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #2fd1c2;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: all 0.5s ease;
+}
+
+.nav a:hover {
+  color: #7ff0e6;
+  text-decoration: underline;
+}
+
+/* Main */
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  padding: 32px 20px;
+  background: #f1f7f6;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  margin: 0 0 8px 0;
+  font-size: 2rem;
+}
+
+.about-text .role {
+  font-weight: 600;
+  color: #4c7a7c;
+  margin-bottom: 12px;
+}
+
+.about-text .location {
+  font-size: 0.95rem;
+  color: #365658;
+  margin-bottom: 12px;
+}
+
+.about-text .location svg {
+  vertical-align: middle;
+  fill: #2fd1c2;
+}
+
+.about-text .summary {
+  line-height: 1.5;
+  color: #365658;
+}
+
+.about-photo img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contacts */
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #365658;
+}
+
+.contacts-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contacts-list li a.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #365658;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.contacts-list li a.contact-link:hover {
+  color: #2fd1c2;
+  text-decoration: underline;
+}
+
+.contacts-list li svg {
+  width: 16px;
+  height: 16px;
+  fill: #2fd1c2;
+  flex-shrink: 0;
+  transition: fill 0.25s ease;
+}
+
+.contacts-list li a.contact-link:hover svg {
+  fill: #7ff0e6;
+}
+
+@media (max-width: 700px) {
+  .nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-photo img {
+    width: 140px;
+    height: 140px;
+    margin-top: 16px;
+  }
 }
