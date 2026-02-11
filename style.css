@@ -77,7 +77,22 @@ body {
 }
 
 section {
-  scroll-margin-top: 60px; 
+  scroll-margin-top: 60px;
+}
+
+.education-list li,
+.skills-list li {
+  position: relative;
+  padding-left: 14px;
+}
+
+.education-list li::before,
+.skills-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2fd1c2;
+  font-weight: bold;
 }
 
 /* About */
@@ -186,17 +201,10 @@ section {
   padding-left: 14px;
 }
 
-.skills-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #2fd1c2;
-  font-weight: bold;
-}
-
 /* Code example */
 .code-example {
   align-self: start;
+  margin-bottom: 15px;
 }
 
 .code-example pre {
@@ -211,6 +219,109 @@ section {
 
 .code-example code {
   font-family: "Courier New", monospace;
+}
+
+/* Education */
+.education {
+  margin-bottom: 15px;
+}
+
+.education-list {
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+
+.education-list li {
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.education-list li strong {
+  color: #0f2f30;
+}
+
+.edu-date {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Projects */
+.projects {
+  align-self: self-start;
+  margin-bottom: 15px;
+}
+
+.projects-list {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.projects-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 10px;
+}
+
+.projects-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  color: #2fd1c2;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.projects-list strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.project-period {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.project-desc {
+  margin: 2px 0 4px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.project-skills {
+  font-size: 14px;
+  color: #0f2f30;
+}
+
+.project-link {
+  font-size: 14px;
+  color: #2fd1c2;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #7ff0e6;
+  text-decoration: underline;
+}
+
+.more-projects {
+  margin-top: 30px;
+}
+
+.more-projects a {
+  color: #2fd1c2;
+  transition: all 0.5s ease;
+}
+
+.more-projects a:hover {
+  color: #7ff0e6;
+  text-decoration: underline;
 }
 
 @media (max-width: 700px) {
