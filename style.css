@@ -422,10 +422,22 @@ section {
   }
 }
 
+@media (max-width: 665px) {
+  section {
+    scroll-margin-top: 95px;
+  }
+}
+
 @media (max-width: 480px) {
   .code-example pre {
     font-size: 12px;
     padding: 8px 12px;
     border-radius: 8px;
+  }
+}
+
+@media (max-width: 385px) {
+  section {
+    scroll-margin-top: 100px;
   }
 }
